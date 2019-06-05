@@ -1,0 +1,8 @@
+(define (gcd a b)
+    (cond((= 0 b)a)
+         (else (gcd b (modulo a b))))
+ )
+(define (PRINTGCD a b)
+  (string-append "GCD OF " (number->string a) " AND " (number->string b) " IS " (number->string (gcd a b))
+  )
+)
